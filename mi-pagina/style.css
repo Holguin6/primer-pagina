@@ -1,0 +1,77 @@
+/* Estilos básicos */
+:root {
+  --color-fondo: #f6f7fb;
+  --color-primario: #2d3e50;
+  --color-acento: #3b82f6;
+  --color-texto: #334155;
+  --fuente-base: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--fuente-base);
+  background-color: var(--color-fondo);          /* background-color */
+  color: var(--color-texto);
+  font-size: 18px;                               /* font-size base */
+  line-height: 1.6;
+  text-align: center;                            /* text-align */
+  padding: 24px;
+}
+
+header h1 {
+  margin: 16px 0 8px;
+  color: var(--color-primario);
+  font-size: 2rem;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+p {
+  margin: 8px 0 16px;
+  font-size: 1.05rem;                            /* ejemplo de font-size */
+}
+
+a {
+  display: inline-block;
+  margin: 8px 0 20px;
+  text-decoration: none;
+  color: var(--color-acento);
+  font-weight: 600;
+}
+
+a:hover { text-decoration: underline; }
+
+.foto {
+  margin: 16px 0 24px;
+}
+
+.foto img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;                             /* redondeado tipo avatar */
+  border: 4px solid #e5e7eb;
+}
+
+#btnHola {
+  cursor: pointer;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: var(--color-acento);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: transform 0.08s ease, opacity 0.2s ease;
+}
+
+#btnHola:active { transform: scale(0.98); opacity: 0.9; }
